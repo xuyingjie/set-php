@@ -1,5 +1,5 @@
 
-Demo: [http://dbmy.sinaapp.com/] []
+Demo: http://dbmy.sinaapp.com http://xuyingjie.github.io/set-php
 
 php + mysql
 
