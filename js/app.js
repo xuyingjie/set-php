@@ -1,5 +1,5 @@
 var app = angular.module('app', ['ngRoute']);
-var url = 'http://dbmy.sinaapp.com/db/';
+var url = 'https://dbmy.sinaapp.com/db/';
 
 app.config(function($httpProvider) {
   if (window.localStorage.name && window.localStorage.token) {
