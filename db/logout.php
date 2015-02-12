@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: Content-Type, Name');
+header('Access-Control-Allow-Headers: Content-Type, Name, Token');
 require("db_con.php");
 
 $headers = array();
