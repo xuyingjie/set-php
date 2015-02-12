@@ -21,7 +21,13 @@ if ($headers['Token'] && isset($request['title'])) {
 
     $title = mysqli_real_escape_string($db, $request['title']);
     $text = mysqli_real_escape_string($db, $request['text']);
-    $result = mysqli_query($db,  "insert into dbmy set title='$title',text='$text'");
+
+    if ($request['id'] == '') {
+      $result = mysqli_query($db,  "insert into dbmy set title='$title',text='$text'");
+    } else {
+      $id = mysqli_real_escape_string($db, $request['id']);
+      $result = mysqli_query($db, "update dbmy set title='$title',text='$text' where id=$id");
+    }
 
     if ($result) {
       echo 1;
